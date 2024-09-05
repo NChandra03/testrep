@@ -1,0 +1,1 @@
+This repository contains all files used for both labs and homeworks for Numerical Methods and Scientific Computing.
