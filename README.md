@@ -1,1 +1,1 @@
-This repository contains all files used for both labs and homeworks for Numerical Methods and Scientific Computing.
+This is the repository for Zara Chandra for APPM 4600. This repository contains all files used for both labs and homeworks for Numerical Methods and Scientific Computing. Primarily, this contains to main folders, homework and labs 
