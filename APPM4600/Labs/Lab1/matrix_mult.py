@@ -19,6 +19,7 @@ def driver():
                     [3, 6, 4, 5],
                     [-2, 9, 7, -3]])
     ans = matrixMult(matrix1, matrix2)
+    #This is the numpy method for matrix mult for checking
     #ans = matrix1 @ matrix2
     return ans
 
