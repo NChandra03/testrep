@@ -24,6 +24,7 @@ def driver():
     return ans
 
 def matrixMult(matrix1, matrix2):
+    #Finding the correct dimensions
     d1 = len(matrix1)
     d2 = len(matrix2[0])
     n = len(matrix1[0])
