@@ -7,6 +7,7 @@ Created on Thu Aug 29 14:06:17 2024
 import numpy as np
 
 def driver():
+    #This is the main section of the code
     #matrix1 = np.array([[1, 2], [3, 4]])
     #matrix2 = np.array([[5, 6], [7, 8]])
     # Defining Matrix 1
