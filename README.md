@@ -1,1 +1,3 @@
 This is the repository for Zara Chandra for APPM 4600. This repository contains all files used for both labs and homework assignments for Numerical Methods and Scientific Computing. Primarily, this contains two main folders, homework and labs. In each of these folders, there are subfolders named Lab1 ... and Homework1 ... in which all python codes related to these assignments will be stored. Some important notes are to avoid storing any non text files as GIT is optimized for text files. Occasionally some PDFs can also be pushed.
+
+test edit
