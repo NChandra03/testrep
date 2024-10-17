@@ -14,8 +14,8 @@ def driver():
     
     h = 2 / (N - 1)
     ''' Create interpolation nodes'''
-    #xint = np.array([-1 + (j - 1) * h for j in range(N + 1)])
-    xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(N + 1)])
+    xint = np.array([-1 + (j - 1) * h for j in range(N + 1)])
+    #xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(N + 1)])
     ''' create interpolation data'''
     yint = f(xint)
     
