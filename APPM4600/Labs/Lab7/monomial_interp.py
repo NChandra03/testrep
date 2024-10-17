@@ -5,7 +5,7 @@ from numpy.linalg import norm
 
 def driver(): 
 
-    f = lambda x: 2*x +4
+    f = lambda x: 1/(1 + (10 * x) ** 2)
     
     N = 10
     a = 0
