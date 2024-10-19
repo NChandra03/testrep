@@ -9,18 +9,20 @@ def driver():
 
     f = lambda x: 1/(1 + (10 * x) ** 2)
     
-    N = 2
+    N = 22
     a = -1
     b = 1
     
     ''' Create interpolation nodes'''
-    h = 2 / (N - 1)
-    xint = np.array([-1 + (j - 1) * h for j in range(N + 1)])
-    print('xint =',xint)
+    #h = 2 / (N - 1)
+    #xint = np.array([-1 + (j - 1) * h for j in range(0, N + 1)])
+    #print('xint =',xint)
 
-    xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(N + 1)])
+    #xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(N + 1)])
+    j = np.arange(1, N+2)
+    xint = np.cos((2 * j - 1) * np.pi / (2 * N))
  
-    print('xint =',xint)
+    #print('xint =',xint)
     '''Create interpolation data'''
     yint = f(xint)
     #print('yint =',yint)
@@ -54,6 +56,7 @@ def driver():
     plt.figure() 
     plt.plot(xeval,yeval)
     plt.plot(xeval,yex)
+    plt.plot(xint[1::],yint[1::],'o', label = 'nodes')
     plt.title('functions')
     
     plt.figure() 
