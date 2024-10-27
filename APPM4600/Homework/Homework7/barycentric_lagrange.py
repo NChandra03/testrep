@@ -16,14 +16,14 @@ def driver():
     f = lambda x: 1/(1 + (10 * x) ** 2)
     
     # Number of interpolation nodes
-    N = 29
+    N = 28
     a = -1
     b = 1
     
     # Create interpolation nodes using Chebyshev points
     h = 2 / (N - 1)
-    #xint = np.array([-1 + (j - 1) * h for j in range(1, N + 1)])
-    xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(1, N + 1)])
+    xint = np.array([-1 + (j - 1) * h for j in range(1, N + 1)])
+    #xint = np.array([np.cos((2 * j - 1) * np.pi / (2 * N)) for j in range(1, N + 1)])
     print(xint)
     
     # Interpolation data (function values at the interpolation nodes)
