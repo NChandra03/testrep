@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 11 17:43:03 2024
+Created on Fri Nov 15 16:56:52 2024
 
 @author: Zara Chandra
 """
@@ -28,11 +28,12 @@ def simp(f,n):
     #print(n)
     #f = lambda x: 1/(1+x ** 2)
 
-    a = -5
-    b = 5
+    a = 0
+    b = 1
     h = (b-a)/n
     
-    total = f(a) + f(b)
+    #total = f(a) + f(b)
+    total = f(b)
     for i in range(1,int(n/2)):
         #print(i * 2,"even")
         total = total + 2 * f(a + h * i * 2)
@@ -45,33 +46,22 @@ def simp(f,n):
     
     return(total)
 
-sol = np.arctan(5) - np.arctan(-5)
+f = lambda t: np.cos(1/t) * t
 
-print(abs(trap(409) - sol))
-print(abs(simp(58) - sol))
-
-f = lambda x: 1/(1+x ** 2)
-result, error = quad(f, -5, 5, epsabs=1e-6)
-print("Result:", result)
-print("Estimated error:", error)
-
-result, error = quad(f, -5, 5, epsabs=1e-4)
-
-print("Result:", result)
-print("Estimated error:", error)
-
+print(simp(f,1001))
 # =============================================================================
-# x1 = []
-# x2 = []
-# num = []
-# for n in range(2,52,2):
-#     num.append(n)
-#     x1.append(abs(trap(n) - sol))
-#     x2.append(abs(simp(n) - sol))
-#     
-# plt.plot(num,x1,label = 'trapazoidal')
-# plt.plot(num,x2,label = 'simpsons')
-# plt.legend()
-# plt.yscale('log')
-# plt.title('error vs intervals')
+# sol = np.arctan(5) - np.arctan(-5)
+# 
+# print(abs(trap(409) - sol))
+# print(abs(simp(58) - sol))
+# 
+# f = lambda x: 1/(1+x ** 2)
+# result, error = quad(f, -5, 5, epsabs=1e-6)
+# print("Result:", result)
+# print("Estimated error:", error)
+# 
+# result, error = quad(f, -5, 5, epsabs=1e-4)
+# 
+# print("Result:", result)
+# print("Estimated error:", error)
 # =============================================================================
